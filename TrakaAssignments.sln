@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrelloAPI", "TrelloAPI\TrelloAPI.csproj", "{3371DBC0-4084-4EAA-A24D-EC37E1E6E193}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51} = {A4C8B365-D34A-44DA-B01D-7B2C29484E51}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{A4C8B365-D34A-44DA-B01D-7B2C29484E51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SauceDemoUI", "SauceDemoUI\SauceDemoUI.csproj", "{D6CE200B-097D-487A-8058-82094E5809F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51} = {A4C8B365-D34A-44DA-B01D-7B2C29484E51}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreUnitTests", "CoreUnitTests\CoreUnitTests.csproj", "{46669D0B-07B5-4720-BF7A-F5926566F189}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51} = {A4C8B365-D34A-44DA-B01D-7B2C29484E51}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3371DBC0-4084-4EAA-A24D-EC37E1E6E193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3371DBC0-4084-4EAA-A24D-EC37E1E6E193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3371DBC0-4084-4EAA-A24D-EC37E1E6E193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3371DBC0-4084-4EAA-A24D-EC37E1E6E193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C8B365-D34A-44DA-B01D-7B2C29484E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6CE200B-097D-487A-8058-82094E5809F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CE200B-097D-487A-8058-82094E5809F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CE200B-097D-487A-8058-82094E5809F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CE200B-097D-487A-8058-82094E5809F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46669D0B-07B5-4720-BF7A-F5926566F189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46669D0B-07B5-4720-BF7A-F5926566F189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46669D0B-07B5-4720-BF7A-F5926566F189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46669D0B-07B5-4720-BF7A-F5926566F189}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B987A99-C81F-4A39-9680-1B2A0A3DAD60}
+	EndGlobalSection
+EndGlobal
