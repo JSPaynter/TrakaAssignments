@@ -9,6 +9,7 @@ using SauceDemoUI.Pages;
 using System.Net;
 using NUnit.Framework;
 using Core.Utilities;
+using SauceDemoUI.Environment;
 
 namespace SauceDemoUI
 {
@@ -25,7 +26,7 @@ namespace SauceDemoUI
         {
             Driver = webDriver;
             Driver.Navigate().GoToUrl("https://www.saucedemo.com/");
-            ScreenshotHelper = new ScreenshotHelper(Driver);
+            ScreenshotHelper = new ScreenshotHelper(Driver, EnvironmentSettings.ScreenshotFolderName);
         }
 
         public void Screenshot(string name)
