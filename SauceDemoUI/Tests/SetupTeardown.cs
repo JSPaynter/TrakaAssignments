@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SauceDemoUI.Environment;
 
 namespace SauceDemoUI.Tests
 {
@@ -20,15 +21,16 @@ namespace SauceDemoUI.Tests
         {
             if (!oneTimeSetupRan)
             {
-                if (!Directory.Exists(ScreenshotHelper.screenshotFolderName))
-                    Directory.CreateDirectory(ScreenshotHelper.screenshotFolderName);
+                if (!Directory.Exists(EnvironmentSettings.ScreenshotFolderName))
+                    Directory.CreateDirectory(EnvironmentSettings.ScreenshotFolderName);
+                oneTimeSetupRan = true;
             }
         }
 
         [SetUp]
         public void BaseSetUp()
         {
-            string screenShotTestFolder = Path.Combine(ScreenshotHelper.screenshotFolderName, TestContext.CurrentContext.Test.MethodName);
+            string screenShotTestFolder = Path.Combine(EnvironmentSettings.ScreenshotFolderName, TestContext.CurrentContext.Test.MethodName);
             if (!Directory.Exists(screenShotTestFolder))
                 Directory.CreateDirectory(screenShotTestFolder);
 

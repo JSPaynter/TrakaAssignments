@@ -7,15 +7,10 @@ using Core.BaseClasses;
 
 namespace TrelloAPI.APIs
 {
-    internal class TrelloAPI : BaseAPI
+    internal class TrelloAPI(string url) : BaseAPI("https://api.trello.com/1/" + url)
     {
-        private const string APIKey = "f3001b9dcbdc1e91b3d72fca3a6ab921";
-        private const string APIToken = "ATTAb1c68e2b28e8b02339c8b97f695d558043f3a928286250cfc3413d1fdf1e9a73679CB3EA";
-
-        public TrelloAPI(string url) : base("https://api.trello.com/1/" + url)
-        {
-
-        }
+        private string APIKey = Environment.EnvironmentSettings.APIKey;
+        private string APIToken = Environment.EnvironmentSettings.APIToken;
 
         protected Dictionary<string, object> GetSecurityHeaders()
         {
